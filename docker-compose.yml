@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  ironclad:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./profiles:/app/profiles
+      - ./data:/app/data
+      - ./logs:/app/logs
+    environment:
+      - OLLAMA_MODEL=tinyllama
+      - FACE_MODEL=buffalo_l
+      - VECTOR_DIMENSION=512
+      - MATCH_THRESHOLD=0.6
+    restart: unless-stopped
+
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_data:/qdrant/storage
+    restart: unless-stopped
