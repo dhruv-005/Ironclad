@@ -1,32 +1,16 @@
-# Core UI
 streamlit>=1.28.0
-
-# LangChain AI Framework
 langchain>=0.1.0
 langchain-community>=0.0.10
 langchain-mcp-adapters>=0.1.0
 langgraph>=0.1.0
-
-# Local LLM
 ollama>=0.1.0
-
-# Face Recognition AI
 insightface>=0.7.3
-opencv-python>=4.8.0
-
-# Vector Database
+opencv-python-headless>=4.8.0
 faiss-cpu>=1.7.4
-
-# MCP Protocol
 mcp>=1.0.0
-
-# OSINT Web Tools
 duckduckgo-search>=4.0.0
 beautifulsoup4>=4.12.0
 requests>=2.31.0
-
-# Utilities
 numpy>=1.24.0
 python-dotenv>=1.0.0
 Pillow>=10.0.0
-
