@@ -62,3 +62,19 @@ if __name__ == "__main__":
     print(f"MATCH_THRESHOLD  : {MATCH_THRESHOLD}")
     print(f"FAISS_INDEX_PATH : {FAISS_INDEX_PATH}")
     print(f"METADATA_PATH    : {METADATA_PATH}")
+
+
+# ─────────────────────────────────────────
+# OSINT SETTINGS
+# ─────────────────────────────────────────
+MAX_SEARCH_RESULTS  = int(os.getenv("MAX_SEARCH_RESULTS", 5))
+SEARCH_TIMEOUT      = int(os.getenv("SEARCH_TIMEOUT", 10))
+ENABLE_IMAGE_SEARCH = os.getenv("ENABLE_IMAGE_SEARCH", "true").lower() == "true"
+ENABLE_NEWS_SEARCH  = os.getenv("ENABLE_NEWS_SEARCH", "true").lower() == "true"
+
+# ─────────────────────────────────────────
+# REPORT SETTINGS
+# ─────────────────────────────────────────
+REPORT_FORMAT       = os.getenv("REPORT_FORMAT", "markdown")
+AUTO_SAVE_REPORTS   = os.getenv("AUTO_SAVE_REPORTS", "true").lower() == "true"
+MAX_REPORT_SIZE     = int(os.getenv("MAX_REPORT_SIZE", 50000))
