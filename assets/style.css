@@ -1,0 +1,90 @@
+/* ─────────────────────────────────────
+   🛡️ Ironclad - Custom Streamlit Theme
+───────────────────────────────────── */
+
+/* Main background */
+.stApp {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #161b22;
+    border-right: 1px solid #30363d;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.stButton > button:hover {
+    background-color: #2ea043;
+    border: none;
+}
+
+/* File uploader */
+[data-testid="stFileUploadDropzone"] {
+    background-color: #161b22;
+    border: 2px dashed #30363d;
+    border-radius: 8px;
+}
+
+/* Code blocks */
+.stCodeBlock {
+    background-color: #161b22 !important;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    background-color: #238636;
+}
+
+/* Metrics */
+[data-testid="metric-container"] {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #e6edf3 !important;
+}
+
+/* Success / Error / Info boxes */
+.stSuccess {
+    background-color: #1a3028;
+    border-left: 4px solid #238636;
+}
+
+.stError {
+    background-color: #3d1a1a;
+    border-left: 4px solid #f85149;
+}
+
+.stInfo {
+    background-color: #1a2535;
+    border-left: 4px solid #388bfd;
+}
+
+/* Divider */
+hr {
+    border-color: #30363d;
+}
+
+/* Spinner */
+.stSpinner {
+    color: #238636 !important;
+}
