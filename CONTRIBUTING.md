@@ -1,25 +1,22 @@
 # 🤝 Contributing to Ironclad
 
-## How to Contribute
-
+## Getting Started
 1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'feat: Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+2. Create feature branch: `git checkout -b feature/name`
+3. Make your changes
+4. Run tests: `python -m pytest tests/ -v`
+5. Commit: `git commit -m "feat: description"`
+6. Push: `git push origin feature/name`
+7. Open a Pull Request
 
 ## Commit Convention
-- 🎉 `feat:` New feature
+- 🎉 `init:` Initial setup
+- ✨ `feat:` New feature
 - 🐛 `fix:` Bug fix
 - 📚 `docs:` Documentation
 - 🎨 `style:` UI/CSS changes
 - 🧪 `test:` Tests
 - ⚙️ `config:` Configuration
-- 🔧 `refactor:` Code refactoring
+- 🔧 `refactor:` Refactoring
 - 📦 `deps:` Dependencies
-
-## Code Style
-- Use Python type hints
-- Add docstrings to all functions
-- Keep functions under 50 lines
-- Write tests for new features
+- 🔒 `security:` Security fixes
